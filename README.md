@@ -35,7 +35,24 @@ client = SportMonks.new("your_api_token")
 
 # Or use configured token
 client = SportMonks.new()
+
+# Get all leagues
+{:ok, leagues} = SportMonks.get_leagues(client)
+
+# Get a specific league
+{:ok, league} = SportMonks.get_league(client, "league_id")
+
+# With includes and filters
+{:ok, leagues} = SportMonks.get_leagues(client, %{
+  include: "country,season",
+  search: "Premier League"
+})
 ```
 
 ## Available Resources
+
+### Leagues
+### Seasons
+### Teams
+
 
