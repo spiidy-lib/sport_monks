@@ -51,8 +51,54 @@ client = SportMonks.new()
 
 ## Available Resources
 
-### Leagues
-### Seasons
-### Teams
+### Core Competition Data
+#### Leagues
 
+```elixir
+SportMonks.get_leagues(client, params \\ %{})
+SportMonks.get_league_by_id(client, league_id, params \\ %{})
+SportMonks.get_leagues_by_live(client, params \\ %{})
+SportMonks.get_leagues_by_date(client, date, params \\ %{})
+SportMonks.get_leagues_by_country_id(client, country_id, params \\ %{})
+SportMonks.get_leagues_by_name(client, name, params \\ %{})
+SportMonks.get_leagues_by_team_id(client, team_id, current, params \\ %{})
+```
 
+#### Seasons
+
+```elixir
+SportMonks.get_seasons(client, params \\ %{})
+SportMonks.get_season_by_id(client, params \\ %{})
+SportMonks.get_seasons_by_team_id(client, team_id, params \\ %{})
+SportMonks.get_seasons_by_name(client, name, params \\ %{})
+```
+
+#### Teams
+
+```elixir
+SportMonks.get_teams(client, params \\ %{})
+SportMonks.get_team_by_id(client, team_id, params \\ %{})
+SportMonks.get_teams_by_country_id(client, country_id, params \\ %{})
+SportMonks.get_teams_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_teams_by_name(client, name, params \\ %{})
+```
+
+### Match/Game Related
+
+#### Fixtures
+
+```elixir
+SportMonks.get_fixtures(client, params \\ %{})
+SportMonks.get_fixture_by_id(client, fixture_id, params \\ %{})
+SportMonks.get_fixtures_by_ids(client, fixture_ids, params \\ %{})
+SportMonks.get_fixtures_by_date(client, date, params \\ %{})
+SportMonks.get_fixtures_by_range(client, start_date, end_date, params \\ %{})
+SportMonks.get_fixtures_by_range_for_team_id(client, start_date, end_date, team_id, params \\ %{})
+SportMonks.get_fixtures_by_head_to_head(client, team_id_1, team_id_2, params \\ %{})
+SportMonks.get_fixtures_by_name(client, name, params \\ %{})
+SportMonks.get_fixtures_by_market_id(client, market_id, params \\ %{})
+SportMonks.get_fixtures_by_tv_id(client, tv_id, past, params \\ %{})
+SportMonks.get_fixtures_by_latest(client, params \\ %{})
+```
+
+### Livescores
