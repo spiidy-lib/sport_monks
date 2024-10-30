@@ -1,6 +1,6 @@
 # SportMonks
 
-Elixir client for the SportMonks API(v3).
+An Elixir client for the SportMonks API(v3).
 
 ## Installation
 
