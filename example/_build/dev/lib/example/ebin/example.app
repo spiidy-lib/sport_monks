@@ -1,9 +1,0 @@
-{application,example,
-             [{config_mtime,1730281178},
-              {optional_applications,[]},
-              {applications,[kernel,stdlib,elixir,logger,sport_monks,
-                             table_rex]},
-              {description,"example"},
-              {modules,[]},
-              {registered,[]},
-              {vsn,"0.1.0"}]}.
