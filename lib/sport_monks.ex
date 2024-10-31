@@ -177,6 +177,12 @@ defmodule SportMonks do
   defdelegate get_market_by_id(client, market_id, params \\ %{}), to: SportMonks.Resources.Markets
   defdelegate get_markets_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Markets
 
+  # bookmakers
+  defdelegate get_bookmakers(client, premium, params \\ %{}), to: SportMonks.Resources.Bookmakers
+  defdelegate get_bookmaker_by_id(client, bookmaker_id, params \\ %{}), to: SportMonks.Resources.Bookmakers
+  defdelegate get_bookmakers_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Bookmakers
+  defdelegate get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Bookmakers
+
   # odds
   defdelegate get_odds_pre_match(client, params \\ %{}), to: SportMonks.Resources.Odds
   defdelegate get_odds_pre_match_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Odds
