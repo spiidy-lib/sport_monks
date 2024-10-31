@@ -146,8 +146,8 @@ SportMonks.get_fixtures(client, params \\ %{})
 SportMonks.get_fixture_by_id(client, fixture_id, params \\ %{})
 SportMonks.get_fixtures_by_ids(client, fixture_ids, params \\ %{})
 SportMonks.get_fixtures_by_date(client, date, params \\ %{})
-SportMonks.get_fixtures_by_range(client, start_date, end_date, params \\ %{})
-SportMonks.get_fixtures_by_range_for_team_id(client, start_date, end_date, team_id, params \\ %{})
+SportMonks.get_fixtures_by_date_range(client, start_date, end_date, params \\ %{})
+SportMonks.get_fixtures_by_date_range_for_team_id(client, start_date, end_date, team_id, params \\ %{})
 SportMonks.get_fixtures_by_head_to_head(client, team_id_1, team_id_2, params \\ %{})
 SportMonks.get_fixtures_by_name(client, name, params \\ %{})
 SportMonks.get_fixtures_by_market_id(client, market_id, params \\ %{})
@@ -230,7 +230,7 @@ SportMonks.get_squad_by_season_id_and_team_id(client, season_id, team_id, extend
 SportMonks.get_transfers(client, params \\ %{})
 SportMonks.get_transfer_by_id(client, transfer_id, params \\ %{})
 SportMonks.get_transfers_by_latest(client, params \\ %{})
-SportMonks.get_transfers_by_range(client, start_date, end_date, params \\ %{})
+SportMonks.get_transfers_by_date_range(client, start_date, end_date, params \\ %{})
 SportMonks.get_transfers_by_team_id(client, team_id, params \\ %{})
 SportMonks.get_transfers_by_player_id(client, player_id, params \\ %{})
 ```
@@ -293,11 +293,18 @@ SportMonks.get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{})
 ### Odds
 
 ```elixir
+SportMonks.get_odds(client, history, params \\ %{}
+SportMonks.get_odds_by_fixture_id(client, fixture_id, params \\ %{})
+SportMonks.get_odds_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
+SportMonks.get_odds_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{})
+SportMonks.get_odds_by_time_range(client, start_time, end_time, history, params \\ %{})
+
 SportMonks.get_odds_pre_match(client, params \\ %{})
 SportMonks.get_odds_pre_match_by_fixture_id(client, fixture_id, params \\ %{})
 SportMonks.get_odds_pre_match_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
 SportMonks.get_odds_pre_match_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{})
 SportMonks.get_odds_pre_match_by_latest(client, params \\ %{})
+
 SportMonks.get_odds_in_play(client, params \\ %{})
 SportMonks.get_odds_in_play_by_fixture_id(client, fixture_id, params \\ %{})
 SportMonks.get_odds_in_play_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
