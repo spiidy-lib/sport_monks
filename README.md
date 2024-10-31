@@ -264,6 +264,7 @@ SportMonks.get_expected_by_player(client, params \\ %{})
 ```
 
 ### Predictions
+
 ```elixir
 SportMonks.get_probabilities(client, params \\ %{})
 SportMonks.get_probabilities_by_fixture_id(client, fixture_id, params \\ %{})
@@ -277,3 +278,17 @@ SportMonks.get_value_bets_by_fixture_id(client, fixture_id, params \\ %{})
 ### Bookmaker
 
 ### Odds
+
+```elixir
+SportMonks.get_odds_pre_match(client, params \\ %{})
+SportMonks.get_odds_pre_match_by_fixture_id(client, fixture_id, params \\ %{})
+SportMonks.get_odds_pre_match_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
+SportMonks.get_odds_pre_match_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{})
+SportMonks.get_odds_pre_match_by_latest(client, params \\ %{})
+SportMonks.get_odds_in_play(client, params \\ %{})
+SportMonks.get_odds_in_play_by_fixture_id(client, fixture_id, params \\ %{})
+SportMonks.get_odds_in_play_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
+SportMonks.get_odds_in_play_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{})
+SportMonks.get_odds_in_play_by_latest(client, params \\ %{})
+
+```
