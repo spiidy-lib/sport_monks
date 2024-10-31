@@ -51,7 +51,11 @@ client = SportMonks.new()
 
 ## Available Resources
 
+Resources that are available.
+
 ### Core Competition Data
+
+Core competition data resources.
 
 #### Leagues
 
@@ -129,6 +133,8 @@ SportMonks.get_rivals_by_team_id(client, team_id, params \\ %{})
 ```
 
 ### Match/Game Related
+
+Match/Game related resources.
 
 #### News
 
@@ -209,6 +215,8 @@ SportMonks.get_schedules_by_season_id_and_team_id(client, season_id, team_id, pa
 
 ### Player Related
 
+Player related resources.
+
 #### Players
 ```elixir
 SportMonks.get_players(client, params \\ %{})
@@ -238,6 +246,8 @@ SportMonks.get_transfers_by_player_id(client, player_id, params \\ %{})
 
 ### Match Details Related
 
+Match details related resources.
+
 #### Statistics
 
 ```elixir
@@ -256,6 +266,8 @@ SportMonks.get_topscorers_by_stage_id(client, stage_id, params \\ %{})
 ```
 
 ### Betting Related
+
+Betting related resources.
 
 #### Expected(xG)
 
