@@ -56,7 +56,7 @@ defmodule SportMonks.Resources.Fixtures do
 
     Please see [Get fixtures by date range](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-fixtures-by-date-range)
   """
-  def get_fixtures_by_range(client, start_date, end_date, params \\ %{}) do
+  def get_fixtures_by_date_range(client, start_date, end_date, params \\ %{}) do
     Client.get(client, "football/fixtures/between/#{start_date}/#{end_date}", params)
   end
 
@@ -67,7 +67,7 @@ defmodule SportMonks.Resources.Fixtures do
 
     Please see [Get fixtures by date range for team](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-fixtures-by-date-range-for-team)
   """
-  def get_fixtures_by_range_for_team_id(client, start_date, end_date, team_id, params \\ %{}) do
+  def get_fixtures_by_date_range_for_team_id(client, start_date, end_date, team_id, params \\ %{}) do
     Client.get(client, "football/fixtures/between/#{start_date}/#{end_date}/#{team_id}", params)
   end
 

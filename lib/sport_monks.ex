@@ -89,8 +89,11 @@ defmodule SportMonks do
   defdelegate get_fixture_by_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_ids(client, fixture_ids, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_date(client, date, params \\ %{}), to: SportMonks.Resources.Fixtures
-  defdelegate get_fixtures_by_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Fixtures
-  defdelegate get_fixtures_by_range_for_team_id(client, start_date, end_date, team_id, params \\ %{}), to: SportMonks.Resources.Fixtures
+  defdelegate get_fixtures_by_date_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Fixtures
+
+  defdelegate get_fixtures_by_date_range_for_team_id(client, start_date, end_date, team_id, params \\ %{}),
+    to: SportMonks.Resources.Fixtures
+
   defdelegate get_fixtures_by_head_to_head(client, team_id_1, team_id_2, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_market_id(client, market_id, params \\ %{}), to: SportMonks.Resources.Fixtures
@@ -145,7 +148,7 @@ defmodule SportMonks do
   defdelegate get_transfers(client, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfer_by_id(client, transfer_id, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfers_by_latest(client, params \\ %{}), to: SportMonks.Resources.Transfers
-  defdelegate get_transfers_by_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfers_by_date_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfers_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfers_by_player_id(client, player_id, params \\ %{}), to: SportMonks.Resources.Transfers
 
@@ -184,6 +187,12 @@ defmodule SportMonks do
   defdelegate get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Bookmakers
 
   # odds
+  defdelegate get_odds(client, history, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_by_time_range(client, start_time, end_time, history, params \\ %{}), to: SportMonks.Resources.Odds
+
   defdelegate get_odds_pre_match(client, params \\ %{}), to: SportMonks.Resources.Odds
   defdelegate get_odds_pre_match_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Odds
 

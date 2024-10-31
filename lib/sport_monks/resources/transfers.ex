@@ -45,7 +45,7 @@ defmodule SportMonks.Resources.Transfers do
 
     Please see [Get transfers by date range](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/transfers/get-transfers-between-date-range)
   """
-  def get_transfers_by_range(client, start_date, end_date, params \\ %{}) do
+  def get_transfers_by_date_range(client, start_date, end_date, params \\ %{}) do
     Client.get(client, "football/transfers/between/#{start_date}/#{end_date}", params)
   end
 
