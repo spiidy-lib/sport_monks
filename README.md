@@ -52,6 +52,7 @@ client = SportMonks.new()
 ## Available Resources
 
 ### Core Competition Data
+
 #### Leagues
 
 ```elixir
@@ -155,7 +156,7 @@ SportMonks.get_fixtures_by_tv_station_id(client, tv_station_id, past, params \\ 
 SportMonks.get_fixtures_by_latest(client, params \\ %{})
 ```
 
-### Livescores
+#### Livescores
 
 ```elixir
 SportMonks.get_livescores(client, params \\ %{})
@@ -163,14 +164,14 @@ SportMonks.get_livescores_by_inplay(client, params \\ %{})
 SportMonks.get_livescores_by_latest(client, params \\ %{})
 ```
 
-### Commentaries
+#### Commentaries
 
 ```elixir
 SportMonks.get_commentaries(client, params \\ %{})
 SportMonks.get_commentaries_by_fixture_id(client, fixture_id, params \\ %{})
 ```
 
-### Standings
+#### Standings
 
 ```elixir
 SportMonks.get_standings(client, params \\ %{})
@@ -180,7 +181,7 @@ SportMonks.get_standings_by_live_for_league_id(client, league_id, params \\ %{})
 SportMonks.get_standings_correction_by_season_id(client, season_id, params \\ %{})
 ```
 
-### Rounds
+#### Rounds
 
 ```elixir
 SportMonks.get_rounds(client, params \\ %{})
@@ -189,7 +190,7 @@ SportMonks.get_rounds_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_rounds_by_name(client, name, params \\ %{})
 ```
 
-### Stages
+#### Stages
 
 ```elixir
 SportMonks.get_stages(client, params \\ %{})
@@ -198,7 +199,7 @@ SportMonks.get_stages_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_stages_by_name(client, name, params \\ %{})
 ```
 
-### Schedules
+#### Schedules
 
 ```elixir
 SportMonks.get_schedules_by_season_id(client, season_id, params \\ %{})
@@ -206,9 +207,9 @@ SportMonks.get_schedules_by_team_id(client, team_id, params \\ %{})
 SportMonks.get_schedules_by_season_id_and_team_id(client, season_id, team_id, params \\ %{})
 ```
 
-## Player Related
+### Player Related
 
-### Players
+#### Players
 ```elixir
 SportMonks.get_players(client, params \\ %{})
 SportMonks.get_player_by_id(client, player_id, params \\ %{})
@@ -217,14 +218,14 @@ SportMonks.get_players_by_name(client, name, params \\ %{})
 SportMonks.get_players_by_latest(client, params \\ %{})
 ```
 
-### Squads
+#### Squads
 
 ```elixir
 SportMonks.get_squad_by_team_id(client, team_id, extended, params \\ %{})
 SportMonks.get_squad_by_season_id_and_team_id(client, season_id, team_id, extended, params \\ %{})
 ```
 
-### Transfers
+#### Transfers
 
 ```elixir
 SportMonks.get_transfers(client, params \\ %{})
@@ -235,9 +236,9 @@ SportMonks.get_transfers_by_team_id(client, team_id, params \\ %{})
 SportMonks.get_transfers_by_player_id(client, player_id, params \\ %{})
 ```
 
-## Match Details
+### Match Details Related
 
-### Statistics
+#### Statistics
 
 ```elixir
 SportMonks.get_statistics_by_player(client, player_id, params \\ %{})
@@ -248,22 +249,22 @@ SportMonks.get_statistics_by_stage(client, stage_id, params \\ %{})
 SportMonks.get_statistics_by_round(client, round_id, params \\ %{})
 ```
 
-### Topscorers
+#### Topscorers
 ```elixir
 SportMonks.get_topscorers_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_topscorers_by_stage_id(client, stage_id, params \\ %{})
 ```
 
-## Betting Related
+### Betting Related
 
-### Expected(xG)
+#### Expected(xG)
 
 ```elixir
 SportMonks.get_expected_by_team(client, params \\ %{})
 SportMonks.get_expected_by_player(client, params \\ %{})
 ```
 
-### Predictions
+#### Predictions
 
 ```elixir
 SportMonks.get_probabilities(client, params \\ %{})
@@ -273,7 +274,7 @@ SportMonks.get_value_bets(client, params \\ %{})
 SportMonks.get_value_bets_by_fixture_id(client, fixture_id, params \\ %{})
 ```
 
-### Markets
+#### Markets
 
 ```elixir
 SportMonks.get_markets(client, premium, params \\ %{})
@@ -281,7 +282,7 @@ SportMonks.get_market_by_id(client, market_id, params \\ %{})
 SportMonks.get_markets_by_name(client, name, params \\ %{})
 ```
 
-### Bookmaker
+#### Bookmaker
 
 ```elixir
 SportMonks.get_bookmakers(client, premium, params \\ %{})
@@ -290,7 +291,7 @@ SportMonks.get_bookmakers_by_name(client, name, params \\ %{})
 SportMonks.get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{})
 ```
 
-### Odds
+#### Odds
 
 ```elixir
 SportMonks.get_odds(client, history, params \\ %{}
