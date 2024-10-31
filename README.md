@@ -112,6 +112,14 @@ SportMonks.get_venues_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_venues_by_name(client, name, params \\ %{})
 ```
 
+#### TVStations
+
+```elixir
+SportMonks.get_tv_stations(client, params \\ %{})
+SportMonks.get_tv_station_by_id(client, tv_station_id, params \\ %{})
+SportMonks.get_tv_stations_by_fixture_id(client, fixture_id, params \\ %{})
+```
+
 ### Match/Game Related
 
 #### Fixtures
