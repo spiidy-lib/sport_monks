@@ -163,6 +163,13 @@ SportMonks.get_livescores_by_inplay(client, params \\ %{})
 SportMonks.get_livescores_by_latest(client, params \\ %{})
 ```
 
+### Commentaries
+
+```elixir
+SportMonks.get_commentaries(client, params \\ %{})
+SportMonks.get_commentaries_by_fixture_id(client, fixture_id, params \\ %{})
+```
+
 ### Standings
 
 ```elixir
