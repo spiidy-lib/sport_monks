@@ -48,6 +48,26 @@ defmodule SportMonks do
   defdelegate get_teams_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Teams
   defdelegate get_teams_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Teams
 
+  # coaches
+  defdelegate get_coaches(client, params \\ %{}), to: SportMonks.Resources.Coaches
+  defdelegate get_coach_by_id(client, coach_id, params \\ %{}), to: SportMonks.Resources.Coaches
+  defdelegate get_coaches_by_country_id(client, country_id, params \\ %{}), to: SportMonks.Resources.Coaches
+  defdelegate get_coaches_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Coaches
+  defdelegate get_coaches_by_latest(client, params \\ %{}), to: SportMonks.Resources.Coaches
+
+  # referees
+  defdelegate get_referees(client, params \\ %{}), to: SportMonks.Resources.Referees
+  defdelegate get_referee_by_id(client, referee_id, params \\ %{}), to: SportMonks.Resources.Referees
+  defdelegate get_referees_by_country_id(client, country_id, params \\ %{}), to: SportMonks.Resources.Referees
+  defdelegate get_referees_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Referees
+  defdelegate get_referees_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Referees
+
+  # venues
+  defdelegate get_venues(client, params \\ %{}), to: SportMonks.Resources.Venues
+  defdelegate get_venue_by_id(client, venue_id, params \\ %{}), to: SportMonks.Resources.Venues
+  defdelegate get_venues_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Venues
+  defdelegate get_venues_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Venues
+
   # fixtures
   defdelegate get_fixtures(client, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixture_by_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Fixtures
