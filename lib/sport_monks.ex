@@ -99,7 +99,7 @@ defmodule SportMonks do
 
   # squads
   defdelegate get_squad_by_team_id(client, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
-  defdelegate get_squad_by_season_id_and_team_id(client, season_id, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
+  defdelegate get_squad_by_season_id_and_team_id(client, season_id, team_id, params \\ %{}), to: SportMonks.Resources.Squads
 
   # transfers
   defdelegate get_transfers(client, params \\ %{}), to: SportMonks.Resources.Transfers
