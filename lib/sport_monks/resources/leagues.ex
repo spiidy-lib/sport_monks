@@ -77,7 +77,7 @@ defmodule SportMonks.Resources.Leagues do
   ## Documentation
 
     Please see [Get all leagues by team ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/leagues/get-all-leagues-by-team-id)
-    Please see [Get leagues by team ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/leagues/get-current-leagues-by-team-id)
+    Please see [Get current leagues by team ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/leagues/get-current-leagues-by-team-id)
 
   """
   def get_leagues_by_team_id(client, team_id, current, params \\ %{}) do

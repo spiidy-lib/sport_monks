@@ -96,4 +96,8 @@ defmodule SportMonks do
   defdelegate get_players_by_country_id(client, country_id, params \\ %{}), to: SportMonks.Resources.Players
   defdelegate get_players_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Players
   defdelegate get_players_by_latest(client, params \\ %{}), to: SportMonks.Resources.Players
+
+  # squads
+  defdelegate get_squad_by_team_id(client, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
+  defdelegate get_squad_by_season_id_and_team_id(client, season_id, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
 end
