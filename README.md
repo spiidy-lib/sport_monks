@@ -176,7 +176,7 @@ SportMonks.get_commentaries_by_fixture_id(client, fixture_id, params \\ %{})
 SportMonks.get_standings(client, params \\ %{})
 SportMonks.get_standings_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_standings_by_round_id(client, round_id, params \\ %{})
-SportMonks.get_standings_by_live_for_league(client, league_id, params \\ %{})
+SportMonks.get_standings_by_live_for_league_id(client, league_id, params \\ %{})
 SportMonks.get_standings_correction_by_season_id(client, season_id, params \\ %{})
 ```
 
@@ -253,3 +253,27 @@ SportMonks.get_statistics_by_round(client, round_id, params \\ %{})
 SportMonks.get_topscorers_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_topscorers_by_stage_id(client, stage_id, params \\ %{})
 ```
+
+## Betting Related
+
+### Expected(xG)
+
+```elixir
+SportMonks.get_expected_by_team(client, params \\ %{})
+SportMonks.get_expected_by_player(client, params \\ %{})
+```
+
+### Predictions
+```elixir
+SportMonks.get_probabilities(client, params \\ %{})
+SportMonks.get_probabilities_by_fixture_id(client, fixture_id, params \\ %{})
+SportMonks.get_predictability_by_league_id(client, league_id, params \\ %{})
+SportMonks.get_value_bets(client, params \\ %{})
+SportMonks.get_value_bets_by_fixture_id(client, fixture_id, params \\ %{})
+```
+
+### Markets
+
+### Bookmaker
+
+### Odds
