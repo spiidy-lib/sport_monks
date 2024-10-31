@@ -83,6 +83,35 @@ SportMonks.get_teams_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_teams_by_name(client, name, params \\ %{})
 ```
 
+#### Coaches
+
+```elixir
+SportMonks.get_coaches(client, params \\ %{})
+SportMonks.get_coach_by_id(client, coach_id, params \\ %{})
+SportMonks.get_coaches_by_country_id(client, country_id, params \\ %{})
+SportMonks.get_coaches_by_name(client, name, params \\ %{})
+SportMonks.get_coaches_by_latest(client, params \\ %{})
+```
+
+#### Referees
+
+```elixir
+SportMonks.get_referees(client, params \\ %{})
+SportMonks.get_referee_by_id(client, referee_id, params \\ %{})
+SportMonks.get_referees_by_country_id(client, country_id, params \\ %{})
+SportMonks.get_referees_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_referees_by_name(client, name, params \\ %{})
+```
+
+#### Venues
+
+```elixir
+SportMonks.get_venues(client, params \\ %{})
+SportMonks.get_venue_by_id(client, venue_id, params \\ %{})
+SportMonks.get_venues_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_venues_by_name(client, name, params \\ %{})
+```
+
 ### Match/Game Related
 
 #### Fixtures
@@ -191,5 +220,4 @@ SportMonks.get_statistics_by_round(client, round_id, params \\ %{})
 ```elixir
 SportMonks.get_topscorers_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_topscorers_by_stage_id(client, stage_id, params \\ %{})
-
 ```
