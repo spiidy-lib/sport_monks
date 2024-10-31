@@ -102,3 +102,28 @@ SportMonks.get_fixtures_by_latest(client, params \\ %{})
 ```
 
 ### Livescores
+
+```elixir
+SportMonks.get_livescores(client, params \\ %{})
+SportMonks.get_livescores_by_inplay(client, params \\ %{})
+SportMonks.get_livescores_by_latest(client, params \\ %{})
+```
+
+### Standings
+
+```elixir
+SportMonks.get_standings(client, params \\ %{})
+SportMonks.get_standings_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_standings_by_round_id(client, round_id, params \\ %{})
+SportMonks.get_standings_by_live_for_league(client, league_id, params \\ %{})
+SportMonks.get_standings_correction_by_season_id(client, season_id, params \\ %{})
+```
+
+### Rounds
+
+```elixir
+SportMonks.get_rounds(client, params \\ %{})
+SportMonks.get_round_by_id(client, round_id, params \\ %{})
+SportMonks.get_rounds_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_rounds_by_name(client, name, params \\ %{})
+```
