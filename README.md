@@ -120,7 +120,24 @@ SportMonks.get_tv_station_by_id(client, tv_station_id, params \\ %{})
 SportMonks.get_tv_stations_by_fixture_id(client, fixture_id, params \\ %{})
 ```
 
+#### Rivals
+
+```elixir
+SportMonks.get_rivals(client, params \\ %{})
+SportMonks.get_rivals_by_team_id(client, team_id, params \\ %{})
+```
+
 ### Match/Game Related
+
+#### News
+
+```elixir
+SportMonks.get_news_pre_match(client, params \\ %{})
+SportMonks.get_news_pre_match_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_news_pre_match_by_upcoming_fixture(client, params \\ %{})
+SportMonks.get_news_post_match(client, params \\ %{})
+SportMonks.get_news_post_match_by_season_id(client, season_id, params \\ %{})
+```
 
 #### Fixtures
 
