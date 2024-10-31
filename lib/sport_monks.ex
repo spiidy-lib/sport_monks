@@ -171,4 +171,23 @@ defmodule SportMonks do
   defdelegate get_predictability_by_league_id(client, league_id, params \\ %{}), to: SportMonks.Resources.Predictions
   defdelegate get_value_bets(client, params \\ %{}), to: SportMonks.Resources.Predictions
   defdelegate get_value_bets_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Predictions
+
+  # odds
+  defdelegate get_odds_pre_match(client, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_pre_match_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Odds
+
+  defdelegate get_odds_pre_match_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{}),
+    to: SportMonks.Resources.Odds
+
+  defdelegate get_odds_pre_match_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_pre_match_by_latest(client, params \\ %{}), to: SportMonks.Resources.Odds
+
+  defdelegate get_odds_in_play(client, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_in_play_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Odds
+
+  defdelegate get_odds_in_play_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{}),
+    to: SportMonks.Resources.Odds
+
+  defdelegate get_odds_in_play_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{}), to: SportMonks.Resources.Odds
+  defdelegate get_odds_in_play_by_latest(client, params \\ %{}), to: SportMonks.Resources.Odds
 end
