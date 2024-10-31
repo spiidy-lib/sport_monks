@@ -127,3 +127,12 @@ SportMonks.get_round_by_id(client, round_id, params \\ %{})
 SportMonks.get_rounds_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_rounds_by_name(client, name, params \\ %{})
 ```
+
+### Stages
+
+```elixir
+SportMonks.get_stages(client, params \\ %{})
+SportMonks.get_stage_by_id(client, round_id, params \\ %{})
+SportMonks.get_stages_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_stages_by_name(client, name, params \\ %{})
+```
