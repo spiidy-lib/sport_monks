@@ -144,3 +144,14 @@ SportMonks.get_schedules_by_season_id(client, season_id, params \\ %{})
 SportMonks.get_schedules_by_team_id(client, team_id, params \\ %{})
 SportMonks.get_schedules_by_season_id_and_team_id(client, season_id, team_id, params \\ %{})
 ```
+
+## Player Related
+
+### Players
+```elixir
+SportMonks.get_players(client, params \\ %{})
+SportMonks.get_player_by_id(client, player_id, params \\ %{})
+SportMonks.get_players_by_country_id(client, country_id, params \\ %{})
+SportMonks.get_players_by_name(client, name, params \\ %{})
+SportMonks.get_players_by_latest(client, params \\ %{})
+```
