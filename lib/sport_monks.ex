@@ -78,7 +78,7 @@ defmodule SportMonks do
   defdelegate get_fixtures_by_head_to_head(client, team_id_1, team_id_2, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_market_id(client, market_id, params \\ %{}), to: SportMonks.Resources.Fixtures
-  defdelegate get_fixtures_by_tv_id(client, tv_id, past, params \\ %{}), to: SportMonks.Resources.Fixtures
+  defdelegate get_fixtures_by_tv_station_id(client, tv_station_id, past, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_latest(client, params \\ %{}), to: SportMonks.Resources.Fixtures
 
   # livescores

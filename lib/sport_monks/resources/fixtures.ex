@@ -112,8 +112,8 @@ defmodule SportMonks.Resources.Fixtures do
     Please see [Get fixtures by upcoming tv-station ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-upcoming-fixtures-by-tv-station-id)
     Please see [Get fixtures by past tv-station ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-past-fixtures-by-tv-station-id)
   """
-  def get_fixtures_by_tv_id(client, tv_id, past, params \\ %{}) do
-    Client.get(client, "/football/fixtures/" <> if(past, do: "past", else: "upcoming") <> "/tv-stations/#{tv_id}  ", params)
+  def get_fixtures_by_tv_station_id(client, tv_station_id, past, params \\ %{}) do
+    Client.get(client, "/football/fixtures/" <> if(past, do: "past", else: "upcoming") <> "/tv-stations/#{tv_station_id}  ", params)
   end
 
   @doc """
