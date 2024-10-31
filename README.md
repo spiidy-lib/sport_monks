@@ -162,3 +162,14 @@ SportMonks.get_players_by_latest(client, params \\ %{})
 SportMonks.get_squad_by_team_id(client, team_id, extended, params \\ %{})
 SportMonks.get_squad_by_season_id_and_team_id(client, season_id, team_id, extended, params \\ %{})
 ```
+
+### Transfers
+
+```elixir
+SportMonks.get_transfers(client, params \\ %{})
+SportMonks.get_transfer_by_id(client, transfer_id, params \\ %{})
+SportMonks.get_transfers_by_latest(client, params \\ %{})
+SportMonks.get_transfers_by_range(client, start_date, end_date, params \\ %{})
+SportMonks.get_transfers_by_team_id(client, team_id, params \\ %{})
+SportMonks.get_transfers_by_player_id(client, player_id, params \\ %{})
+```
