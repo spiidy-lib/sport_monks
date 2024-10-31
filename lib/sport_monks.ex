@@ -110,7 +110,7 @@ defmodule SportMonks do
   defdelegate get_standings(client, params \\ %{}), to: SportMonks.Resources.Standings
   defdelegate get_standings_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Standings
   defdelegate get_standings_by_round_id(client, round_id, params \\ %{}), to: SportMonks.Resources.Standings
-  defdelegate get_standings_by_live_for_league(client, league_id, params \\ %{}), to: SportMonks.Resources.Standings
+  defdelegate get_standings_by_live_for_league_id(client, league_id, params \\ %{}), to: SportMonks.Resources.Standings
   defdelegate get_standings_correction_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Standings
 
   # rounds
@@ -160,4 +160,15 @@ defmodule SportMonks do
   # topscorers
   defdelegate get_topscorers_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Topscorers
   defdelegate get_topscorers_by_stage_id(client, stage_id, params \\ %{}), to: SportMonks.Resources.Topscorers
+
+  # expected
+  defdelegate get_expected_by_team(client, params \\ %{}), to: SportMonks.Resources.Expected
+  defdelegate get_expected_by_player(client, params \\ %{}), to: SportMonks.Resources.Expected
+
+  # predictions
+  defdelegate get_probabilities(client, params \\ %{}), to: SportMonks.Resources.Predictions
+  defdelegate get_probabilities_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Predictions
+  defdelegate get_predictability_by_league_id(client, league_id, params \\ %{}), to: SportMonks.Resources.Predictions
+  defdelegate get_value_bets(client, params \\ %{}), to: SportMonks.Resources.Predictions
+  defdelegate get_value_bets_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Predictions
 end

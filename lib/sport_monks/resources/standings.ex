@@ -56,7 +56,7 @@ defmodule SportMonks.Resources.Standings do
 
     Please see [Get live standings by league ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/standings/get-live-standings-by-league-id)
   """
-  def get_standings_by_live_for_league(client, league_id, params \\ %{}) do
+  def get_standings_by_live_for_league_id(client, league_id, params \\ %{}) do
     Client.get(client, "/football/standings/live/league/#{league_id}", params)
   end
 end
