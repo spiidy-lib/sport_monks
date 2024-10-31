@@ -26,7 +26,7 @@ defmodule SportMonks do
     new(api_token)
   end
 
-  # leagues & league
+  # leagues
   defdelegate get_leagues(client, params \\ %{}), to: SportMonks.Resources.Leagues
   defdelegate get_league_by_id(client, league_id, params \\ %{}), to: SportMonks.Resources.Leagues
   defdelegate get_leagues_by_live(client, params \\ %{}), to: SportMonks.Resources.Leagues
@@ -35,20 +35,20 @@ defmodule SportMonks do
   defdelegate get_leagues_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Leagues
   defdelegate get_leagues_by_team_id(client, team_id, current, params \\ %{}), to: SportMonks.Resources.Leagues
 
-  ## seasons & season
+  # seasons
   defdelegate get_seasons(client, params \\ %{}), to: SportMonks.Resources.Seasons
   defdelegate get_season_by_id(client, params \\ %{}), to: SportMonks.Resources.Seasons
   defdelegate get_seasons_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Seasons
   defdelegate get_seasons_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Seasons
 
-  ## teams & team
+  # teams
   defdelegate get_teams(client, params \\ %{}), to: SportMonks.Resources.Teams
   defdelegate get_team_by_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Teams
   defdelegate get_teams_by_country_id(client, country_id, params \\ %{}), to: SportMonks.Resources.Teams
   defdelegate get_teams_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Teams
   defdelegate get_teams_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Teams
 
-  ## fixtures & fixture
+  # fixtures
   defdelegate get_fixtures(client, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixture_by_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_ids(client, fixture_ids, params \\ %{}), to: SportMonks.Resources.Fixtures
@@ -61,8 +61,21 @@ defmodule SportMonks do
   defdelegate get_fixtures_by_tv_id(client, tv_id, past, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixtures_by_latest(client, params \\ %{}), to: SportMonks.Resources.Fixtures
 
-  ## livescores & livescore
+  # livescores
   defdelegate get_livescores(client, params \\ %{}), to: SportMonks.Resources.Livescores
   defdelegate get_livescores_by_inplay(client, params \\ %{}), to: SportMonks.Resources.Livescores
   defdelegate get_livescores_by_latest(client, params \\ %{}), to: SportMonks.Resources.Livescores
+
+  # standings
+  defdelegate get_standings(client, params \\ %{}), to: SportMonks.Resources.Standings
+  defdelegate get_standings_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Standings
+  defdelegate get_standings_by_round_id(client, round_id, params \\ %{}), to: SportMonks.Resources.Standings
+  defdelegate get_standings_by_live_for_league(client, league_id, params \\ %{}), to: SportMonks.Resources.Standings
+  defdelegate get_standings_correction_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Standings
+
+  # rounds
+  defdelegate get_rounds(client, params \\ %{}), to: SportMonks.Resources.Rounds
+  defdelegate get_round_by_id(client, round_id, params \\ %{}), to: SportMonks.Resources.Rounds
+  defdelegate get_rounds_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Rounds
+  defdelegate get_rounds_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Rounds
 end

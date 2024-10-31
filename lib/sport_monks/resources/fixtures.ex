@@ -10,7 +10,7 @@ defmodule SportMonks.Resources.Fixtures do
 
   ## Documentation
 
-    Please see [Get all fictures](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-all-fixtures)
+    Please see [Get all fixtures](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/fixtures/get-all-fixtures)
   """
   def get_fixtures(client, params \\ %{}) do
     Client.get(client, "/football/fixtures", params)
