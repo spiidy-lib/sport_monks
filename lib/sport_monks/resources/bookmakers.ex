@@ -23,8 +23,8 @@ defmodule SportMonks.Resources.Bookmakers do
 
     Please see [Get bookmaker by ID](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/bookmakers/get-bookmaker-by-id)
   """
-  def get_bookmaker_by_id(client, book_maker_id, params \\ %{}) do
-    Client.get(client, "/odds/bookmakers/#{book_maker_id}", params)
+  def get_bookmaker_by_id(client, bookmaker_id, params \\ %{}) do
+    Client.get(client, "/odds/bookmakers/#{bookmaker_id}", params)
   end
 
   @doc """
