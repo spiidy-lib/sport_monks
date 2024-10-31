@@ -73,6 +73,17 @@ defmodule SportMonks do
   defdelegate get_tv_station_by_id(client, tv_station_id, params \\ %{}), to: SportMonks.Resources.TVStations
   defdelegate get_tv_stations_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.TVStations
 
+  # rivals
+  defdelegate get_rivals(client, params \\ %{}), to: SportMonks.Resources.Rivals
+  defdelegate get_rivals_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Rivals
+
+  # news
+  defdelegate get_news_pre_match(client, params \\ %{}), to: SportMonks.Resources.News
+  defdelegate get_news_pre_match_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.News
+  defdelegate get_news_pre_match_by_upcoming_fixture(client, params \\ %{}), to: SportMonks.Resources.News
+  defdelegate get_news_post_match(client, params \\ %{}), to: SportMonks.Resources.News
+  defdelegate get_news_post_match_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.News
+
   # fixtures
   defdelegate get_fixtures(client, params \\ %{}), to: SportMonks.Resources.Fixtures
   defdelegate get_fixture_by_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Fixtures
