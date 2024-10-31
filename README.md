@@ -294,7 +294,7 @@ SportMonks.get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{})
 #### Odds
 
 ```elixir
-SportMonks.get_odds(client, history, params \\ %{}
+SportMonks.get_odds(client, history, params \\ %{})
 SportMonks.get_odds_by_fixture_id(client, fixture_id, params \\ %{})
 SportMonks.get_odds_by_fixture_id_and_bookmaker_id(client, fixture_id, bookmaker_id, params \\ %{})
 SportMonks.get_odds_by_fixture_id_and_market_id(client, fixture_id, market_id, params \\ %{})
