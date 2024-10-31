@@ -100,4 +100,12 @@ defmodule SportMonks do
   # squads
   defdelegate get_squad_by_team_id(client, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
   defdelegate get_squad_by_season_id_and_team_id(client, season_id, team_id, extended, params \\ %{}), to: SportMonks.Resources.Squads
+
+  # transfers
+  defdelegate get_transfers(client, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfer_by_id(client, transfer_id, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfers_by_latest(client, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfers_by_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfers_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Transfers
+  defdelegate get_transfers_by_player_id(client, player_id, params \\ %{}), to: SportMonks.Resources.Transfers
 end

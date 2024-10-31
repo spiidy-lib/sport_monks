@@ -54,11 +54,9 @@ defmodule SportMonks.Resources.Players do
 
   ## Documentation
 
-    Please see [Get latest updated players](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/players/get-last-updated-players)
+    Please see [Get latest players](https://docs.sportmonks.com/football/endpoints-and-entities/endpoints/players/get-last-updated-players)
   """
   def get_players_by_latest(client, params \\ %{}) do
     Client.get(client, "/football/players/latest", params)
   end
-end
-
 end
