@@ -173,3 +173,23 @@ SportMonks.get_transfers_by_range(client, start_date, end_date, params \\ %{})
 SportMonks.get_transfers_by_team_id(client, team_id, params \\ %{})
 SportMonks.get_transfers_by_player_id(client, player_id, params \\ %{})
 ```
+
+## Match Details
+
+### Statistics
+
+```elixir
+SportMonks.get_statistics_by_player(client, player_id, params \\ %{})
+SportMonks.get_statistics_by_team(client, team_id, params \\ %{})
+SportMonks.get_statistics_by_coach(client, coach_id, params \\ %{})
+SportMonks.get_statistics_by_referee(client, referee_id, params \\ %{})
+SportMonks.get_statistics_by_stage(client, stage_id, params \\ %{})
+SportMonks.get_statistics_by_round(client, round_id, params \\ %{})
+```
+
+### Topscorers
+```elixir
+SportMonks.get_topscorers_by_season_id(client, season_id, params \\ %{})
+SportMonks.get_topscorers_by_stage_id(client, stage_id, params \\ %{})
+
+```
