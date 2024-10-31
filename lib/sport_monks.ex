@@ -102,6 +102,10 @@ defmodule SportMonks do
   defdelegate get_livescores_by_inplay(client, params \\ %{}), to: SportMonks.Resources.Livescores
   defdelegate get_livescores_by_latest(client, params \\ %{}), to: SportMonks.Resources.Livescores
 
+  # commentaries
+  defdelegate get_commentaries(client, params \\ %{}), to: SportMonks.Resources.Commentaries
+  defdelegate get_commentaries_by_fixture_id(client, fixture_id, params \\ %{}), to: SportMonks.Resources.Commentaries
+
   # standings
   defdelegate get_standings(client, params \\ %{}), to: SportMonks.Resources.Standings
   defdelegate get_standings_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Standings
