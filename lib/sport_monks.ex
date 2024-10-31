@@ -84,4 +84,9 @@ defmodule SportMonks do
   defdelegate get_stage_by_id(client, round_id, params \\ %{}), to: SportMonks.Resources.Stages
   defdelegate get_stages_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Stages
   defdelegate get_stages_by_name(client, name, params \\ %{}), to: SportMonks.Resources.Stages
+
+  # schedules
+  defdelegate get_schedules_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Schedules
+  defdelegate get_schedules_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Schedules
+  defdelegate get_schedules_by_season_id_and_team_id(client, season_id, team_id, params \\ %{}), to: SportMonks.Resources.Schedules
 end
