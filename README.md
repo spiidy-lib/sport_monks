@@ -283,6 +283,13 @@ SportMonks.get_markets_by_name(client, name, params \\ %{})
 
 ### Bookmaker
 
+```elixir
+SportMonks.get_bookmakers(client, premium, params \\ %{})
+SportMonks.get_bookmaker_by_id(client, bookmaker_id, params \\ %{})
+SportMonks.get_bookmakers_by_name(client, name, params \\ %{})
+SportMonks.get_bookmakers_by_fixture_id(client, fixture_id, params \\ %{})
+```
+
 ### Odds
 
 ```elixir
