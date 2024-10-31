@@ -126,7 +126,7 @@ SportMonks.get_fixtures_by_range_for_team_id(client, start_date, end_date, team_
 SportMonks.get_fixtures_by_head_to_head(client, team_id_1, team_id_2, params \\ %{})
 SportMonks.get_fixtures_by_name(client, name, params \\ %{})
 SportMonks.get_fixtures_by_market_id(client, market_id, params \\ %{})
-SportMonks.get_fixtures_by_tv_id(client, tv_id, past, params \\ %{})
+SportMonks.get_fixtures_by_tv_station_id(client, tv_station_id, past, params \\ %{})
 SportMonks.get_fixtures_by_latest(client, params \\ %{})
 ```
 
