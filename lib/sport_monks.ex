@@ -108,4 +108,16 @@ defmodule SportMonks do
   defdelegate get_transfers_by_range(client, start_date, end_date, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfers_by_team_id(client, team_id, params \\ %{}), to: SportMonks.Resources.Transfers
   defdelegate get_transfers_by_player_id(client, player_id, params \\ %{}), to: SportMonks.Resources.Transfers
+
+  # statistics
+  defdelegate get_statistics_by_player(client, player_id, params \\ %{}), to: SportMonks.Resources.Statistics
+  defdelegate get_statistics_by_team(client, team_id, params \\ %{}), to: SportMonks.Resources.Statistics
+  defdelegate get_statistics_by_coach(client, coach_id, params \\ %{}), to: SportMonks.Resources.Statistics
+  defdelegate get_statistics_by_referee(client, referee_id, params \\ %{}), to: SportMonks.Resources.Statistics
+  defdelegate get_statistics_by_stage(client, stage_id, params \\ %{}), to: SportMonks.Resources.Statistics
+  defdelegate get_statistics_by_round(client, round_id, params \\ %{}), to: SportMonks.Resources.Statistics
+
+  # topscorers
+  defdelegate get_topscorers_by_season_id(client, season_id, params \\ %{}), to: SportMonks.Resources.Topscorers
+  defdelegate get_topscorers_by_stage_id(client, stage_id, params \\ %{}), to: SportMonks.Resources.Topscorers
 end
